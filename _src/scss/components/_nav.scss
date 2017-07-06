@@ -1,0 +1,99 @@
+$navigation-bg-color: #fff !default;
+$navigation-breaker: #000 !default;
+
+.nav {
+    background-color: $navigation-bg-color;
+
+    &.animated {
+        transition: flex .25s ease-in;
+    }
+
+    &.expanded {
+        @include breakpoint(map-get($breakpoints, sm)) {
+            @include flex(140px, 0, 0);
+        }
+
+        .nav__list__link {
+            text-decoration: none;
+
+            @include breakpoint(map-get($breakpoints, sm)) {
+                width: 100px;
+            }
+        }
+
+        .icon__shorttext {
+            animation: sidebar-text-animation .4s 1;
+            display: inline-block;
+            padding-left: 10px;
+            vertical-align: center;
+        }
+    }
+
+    @include breakpoint(map-get($breakpoints, sm)) {
+        position: relative;
+        min-height: 100vh;
+        @include flex(45px, 0, 0);
+        overflow-x: hidden;
+    }
+
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding: 10px 5px 10px 10px;
+    }
+}
+
+.nav__list--sticky {
+    @include breakpoint(map-get($breakpoints, sm)) {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+.nav__list__link {
+    @include display-flex();
+    @include align-items(center);
+}
+
+.nav__list__separator {
+    background-color: $brand-color-1;
+
+    @include breakpoint(map-get($breakpoints, sm)) {
+        @include angle(before, false, 12deg);
+        @include angle(after, true, 12deg);
+
+        margin-top: 20px;
+    }
+
+    .nav__list__link {
+        color: $navigation-bg-color;
+
+        @include pseudos() {
+          color: darken($navigation-bg-color, 10%);
+        }
+    }
+
+    .nav.expanded & {
+        padding: 5px 0;
+
+        @include breakpoint(map-get($breakpoints, sm)) {
+            @include angle(before, false, 3deg);
+            @include angle(after, true, 3deg);
+
+            width: 140px;
+        }
+    }
+}
+
+.nav--left {
+    border-right: solid 1px $navigation-breaker;
+}
+
+.nav--right {
+    border-left: solid 1px $navigation-breaker;
+}

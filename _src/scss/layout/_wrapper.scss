@@ -1,0 +1,13 @@
+$wrapper-color-map: () !default;
+
+.wrapper {
+    padding: 15px 15px 70px;
+}
+
+.wrapper--flex {
+    @include breakpoint(map-get($breakpoints, sm)) {
+        @include display-flex();
+    }
+}
+
+@include color-set(wrapper, $wrapper-color-map, false);

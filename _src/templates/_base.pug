@@ -1,0 +1,23 @@
+doctype html
+head
+  meta(charset="UTF-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+  include includes/meta.pug
+  block title
+
+  link(rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+  link(href="https://fonts.googleapis.com/css?family=Libre+Franklin:300|VT323" rel="stylesheet")
+
+  if selectedPage != 'project' && selectedPage != 'blog-post'
+    link(rel="stylesheet" type="text/css" href="css/main.min.css")
+  else
+    link(rel="stylesheet" type="text/css" href="../css/main.min.css")
+
+body
+  .wrapper--flex
+    include includes/nav.pug
+    .content
+      block body
+  include includes/scripts.pug
+
+  block scripts

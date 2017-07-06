@@ -1,0 +1,6 @@
+node_modules/ # ignore node_modules, that are not needed to display the site
+_src/scss/vendor/ # ignore anything installed by bower
+
+# I would usually remove the minified version too, but ad Github will be serving the repo
+# I need to leave it in.
+css/main.css # ignore unminified css

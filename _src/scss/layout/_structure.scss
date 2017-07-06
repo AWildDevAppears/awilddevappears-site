@@ -1,0 +1,44 @@
+$content-background: #eee !default;
+
+@keyframes sidebar-text-animation {
+    0% { opacity: 0; }
+    80% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+section {
+    margin-bottom: 2em;
+    padding: 0 15px;
+
+    &::last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.content {
+    @include flex(1, 0, 0);
+}
+
+.content {
+    background-color: $content-background;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+
+    @include breakpoint(map-get($breakpoints, lg)) {
+        width: map-get($container, lg);
+    }
+
+    @include breakpoint(map-get($breakpoints, md)) {
+        width: map-get($container, md);
+    }
+
+    @include breakpoint(map-get($breakpoints, sm)) {
+        width: map-get($container, sm);
+    }
+}

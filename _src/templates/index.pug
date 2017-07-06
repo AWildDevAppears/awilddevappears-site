@@ -1,0 +1,56 @@
+extends _base.pug
+
+block title
+  - var selectedPage = 'home'
+  title AWildDevAppears
+
+block body
+  header.hero
+    .container
+      h1.bitwise A Wild Dev Appears
+
+  .container
+     h2 Note
+
+    p.
+      This site mostly exists simply as a basis for me to work on, I plan to upgrade this site as I go, adding new functionality
+      and features. None of what you see here is final. It may not always look the way it does, it may not stay on Github.io's servers,
+      it may not even stay written in the languages it is, it all depends on how I decide to move forward with this.
+
+    h2  Site Meta
+    p
+      | This site has been built using SCSS as a CSS preprocessor, using my own selection of tools (some of which I have built)
+      | to aid me in styling up this site, for the pages, I have used Pug, formally Jade, as a transpiler, my reasoning behind this
+      | is so that I can make it a lot easier to edit and manipulate shared areas of the page, without touching every page file.
+      | The idea behind this site build is to allow it to me as easy as possible for me to maintain and completely alter as I see fit.
+
+    h3 What are the tools behind this site?
+
+    ul
+      li
+        a(href="") Node
+        p Node is used for compiling the PUG files and running Gulp etc.
+      li
+        a(href="") Pug
+        p Pug is used for this sites html pages, it is used to make the site easier to modify
+      li
+        a(href="") SCSS
+        p SCSS is used as the precompiler for all of my CSS files
+      li
+        a(href="") Tequila
+        p Tequila is my own Sass based tool that adds in a few mixins so that I don't have to reinvent the wheel every time
+      li
+        a(href="") Breakpoint
+        p Breakpoint is used to make breakpoint media queries feel a lot cleaner and easier to read.
+      li
+        a(href="") Singularity
+        p Singularity is my grid system of choice, it is used for all of the grid sections that I feel would be easier to acheive
+          |
+          | without flexbox.
+      li
+        a(href="") Bower
+        p Bower is the tool I am using to include my Sass mixins and tools.
+      li
+        a(href="") Gulp
+        p Gulp is used to tie all of the tools I am using together
+

@@ -1,0 +1,25 @@
+extends _base.pug
+
+block title
+  - var selectedPage = 'blog'
+  title AWildDevAppears - Blog
+
+
+block body
+  - var blogPosts = {'blog/post-one.html': { title: 'Blog post one', date: '01-01-01' }, 'blog/post-two': { title: 'Blog post two', date: '01-01-01' }, 'blog/post-three': { title: 'Blog post three', date: '01-01-01' }, 'blog/post-four': { title: 'Blog post four', date: '01-01-01' }}
+
+  header.hero
+    .container
+      h1.bitwise A Wild Dev Appears
+      h2 Blog
+
+  .container
+
+    .row
+      each val, key in blogPosts
+        .col--33
+          a.card.card--link(href= key)
+            .card__image.color.color-1
+            h4= val.title
+            p= val.date
+

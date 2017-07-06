@@ -1,0 +1,11 @@
+$hero-background-color: #fff !default;
+$hero-breaker-color: #ccc !default;
+
+.hero {
+    background-color: $hero-background-color;
+    border-bottom: solid 1px $hero-breaker-color;
+    color: set-dependent-color($hero-background-color);
+    padding: 100px 15px;
+    margin: -15px -15px 0;
+    text-align: center;
+}

@@ -1,0 +1,63 @@
+extends _base.pug
+
+block title
+  - var selectedPage = 'projects'
+  title AWildDevAppears - Projects
+
+block body
+  header.hero
+    .container
+      h1.bitwise A Wild Dev Appears
+      h2 Projects
+
+  .container
+    h2 In house Projects
+
+    .row
+      .col
+        a.card.card--link(href="https://www.whiteoctober.co.uk/portfolio")
+          h3 Portfolio of White October
+
+    h2 Hack days
+
+    .row
+      .col
+        .card
+          h3 Hack day 2016 May
+          a(href="https://github.com/WoJBurgess/hack-day-2016") codebase
+            i.ion.ion-chevron-right
+      .col
+        .card
+          h3 Hack day 2016 Summer of Hacks
+          a(href="https://github.com/WoJBurgess/soh-game-dev-hack") codebase
+            i.ion.ion-chevron-right
+      .col
+        .card
+          h3 Hack day 2016 August
+          div
+            a(href="https://wojburgess.github.io/hack-day-2016-autumn") live build
+              i.ion.ion-chevron-right
+          div
+            a(href="https://github.com/WoJBurgess/hack-day-2016-autumn") codebase
+              i.ion.ion-chevron-right
+      .col
+        .card
+          h3 Hack day 2017 January
+          div
+            a(href="https://wojburgess.github.io/hack-day-2017-january") live build
+              i.ion.ion-chevron-right
+          div
+            a(href="https://github.com/WoJBurgess/hack-day-2017-january") codebase
+              i.ion.ion-chevron-right
+
+    h2 Personal Projects (Open source)
+
+    .row
+      .col
+        .card
+          h3 Tequila
+          p A small collection of mixins that I utilize frequently
+          div
+            a(href="https://github.com/WoJBurgess/tequila-sass") codebase (Sass)
+          div
+            a(href="https://github.com/WoJBurgess/tequila-less") codebase (Less)

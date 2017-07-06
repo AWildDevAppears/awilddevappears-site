@@ -1,0 +1,25 @@
+$primary-link-color: blue !default;
+$primary-link-color-hover: darken(blue, 10%) !default;
+$button-type-map: () !default;
+
+.btn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+    color: $primary-link-color;
+    font-size: 1em;
+    padding: 10px 15px;
+    text-decoration: none;
+
+    @include pseudos() {
+        color: $primary-link-color-hover;
+    }
+}
+
+.btn--icon {
+    padding: 0;
+}
+
+// Create buttons
+@include color-set(btn, $button-type-map, true);
