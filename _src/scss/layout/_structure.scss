@@ -6,21 +6,18 @@ $content-background: #eee !default;
     100% { opacity: 1; }
 }
 
-
 section {
     margin-bottom: 2em;
     padding: 0 15px;
 
-    &::last-of-type {
+    &:last-of-type {
         margin-bottom: 0;
     }
 }
 
 .content {
     @include flex(1, 0, 0);
-}
 
-.content {
     background-color: $content-background;
 }
 
