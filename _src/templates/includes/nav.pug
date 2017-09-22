@@ -1,56 +1,57 @@
 nav.nav.nav--left.expanded
-  ul.nav__list.nav__list--sticky
-    li
-      if selectedPage != 'home'
-        a.nav__list__link(href="index.html")
-          i.ion.ico--md.ion-android-home
-          span.icon__shorttext Home
-      else
-        a.nav__list__link(href="#")
-          i.ion.ico--md.ion-android-home
-          span.icon__shorttext Home
+  .nav__content--sticky
+    ul.nav__list
+      li
+        if selectedPage != 'home'
+          a.nav__list__link(href="index.html")
+            i.ion.ico--md.ion-android-home
+            span.icon__shorttext Home
+        else
+          a.nav__list__link(href="#")
+            i.ion.ico--md.ion-android-home
+            span.icon__shorttext Home
 
-    li
-      if selectedPage != 'about'
-        a.nav__list__link(href="about.html")
-          i.ion.ico--md.ion-person
-          span.icon__shorttext About
-      else
-        a.nav__list__link(href="#")
-          i.ion.ico--md.ion-person
-          span.icon__shorttext About
+      li
+        if selectedPage != 'about'
+          a.nav__list__link(href="about.html")
+            i.ion.ico--md.ion-person
+            span.icon__shorttext About
+        else
+          a.nav__list__link(href="#")
+            i.ion.ico--md.ion-person
+            span.icon__shorttext About
 
-    li
-      if selectedPage != 'projects'
-        a.nav__list__link(href="projects.html")
-          i.ion.ico--md.ion-code
-          span.icon__shorttext Projects
-      else
-        a.nav__list__link(href="#")
-          i.ion.ico--md.ion-code
-          span.icon__shorttext Projects
+      li
+        if selectedPage != 'projects'
+          a.nav__list__link(href="projects.html")
+            i.ion.ico--md.ion-code
+            span.icon__shorttext Projects
+        else
+          a.nav__list__link(href="#")
+            i.ion.ico--md.ion-code
+            span.icon__shorttext Projects
 
-    li.hidden
-      if selectedPage != 'blog'
-        a.nav__list__link(href="blog.html")
-          i.ion.ico--md.ion-social-rss
-          span.icon__shorttext Blog
-      else
-        a.nav__list__link(href="#")
-          i.ion.ico--md.ion-social-rss
-          span.icon__shorttext Blog
+      li.hidden
+        if selectedPage != 'blog'
+          a.nav__list__link(href="blog.html")
+            i.ion.ico--md.ion-social-rss
+            span.icon__shorttext Blog
+        else
+          a.nav__list__link(href="#")
+            i.ion.ico--md.ion-social-rss
+            span.icon__shorttext Blog
 
-    li
-      if selectedPage != 'styleguide'
-        a.nav__list__link(href="styleguide.html")
-          i.ion.ico--md.ion-paintbucket
-          span.icon__shorttext Styleguide
-      else
-        a.nav__list__link(href="#")
-          i.ion.ico--md.ion-paintbucket
-          span.icon__shorttext Styleguide
+      li
+        if selectedPage != 'styleguide'
+          a.nav__list__link(href="styleguide.html")
+            i.ion.ico--md.ion-paintbucket
+            span.icon__shorttext Styleguide
+        else
+          a.nav__list__link(href="#")
+            i.ion.ico--md.ion-paintbucket
+            span.icon__shorttext Styleguide
 
-    .nav__list__separator
+    ul.nav__list--separator
       li
         a.nav__list__link(href="https://github.com/WoJBurgess")
           i.ion.ico--md.ion-social-github
@@ -65,9 +66,8 @@ nav.nav.nav--left.expanded
         a.nav__list__link(href="https://twitter.com/")
           i.ion.ico--md.ion-social-twitter
           span.icon__shorttext Twitter
-
-
-    li
-      button.btn.btn--icon.hidden(data-role="settigs-menu")
-        i.ion.ico--md.ion-gear-b
-        span.icon__shorttext Settings
+    ul.nav__list.u-full-height
+      li
+        button.btn.btn--icon.hidden(data-role="settings-menu")
+          i.ion.ico--md.ion-gear-b
+          span.icon__shorttext Settings

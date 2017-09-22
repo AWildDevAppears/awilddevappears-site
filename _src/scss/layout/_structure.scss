@@ -19,8 +19,9 @@ section {
     @include flex(1, 0, 0);
 
     background-color: $content-background;
+    margin-left: -20px;
+    padding-left: 20px;
 }
-
 
 .container {
     margin: 0 auto;

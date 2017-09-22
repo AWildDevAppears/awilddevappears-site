@@ -2,7 +2,7 @@ $navigation-bg-color: #fff !default;
 $navigation-breaker: #000 !default;
 
 .nav {
-    background-color: $navigation-bg-color;
+    z-index: 1;
 
     &.animated {
         transition: flex .25s ease-in;
@@ -10,14 +10,14 @@ $navigation-breaker: #000 !default;
 
     &.expanded {
         @include breakpoint(map-get($breakpoints, sm)) {
-            @include flex(140px, 0, 0);
+            @include flex(160px, 0, 0);
         }
 
         .nav__list__link {
             text-decoration: none;
 
             @include breakpoint(map-get($breakpoints, sm)) {
-                width: 100px;
+                width: 140px;
             }
         }
 
@@ -38,16 +38,7 @@ $navigation-breaker: #000 !default;
 
 }
 
-.nav__list {
-    list-style: none;
-    padding: 0;
-
-    li {
-        padding: 10px 5px 10px 10px;
-    }
-}
-
-.nav__list--sticky {
+.nav__content--sticky {
     @include breakpoint(map-get($breakpoints, sm)) {
         position: fixed;
         top: 0;
@@ -55,19 +46,35 @@ $navigation-breaker: #000 !default;
     }
 }
 
-.nav__list__link {
-    @include display-flex();
-    @include align-items(center);
-}
+.nav__list {
+    background-color: $navigation-bg-color;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
-.nav__list__separator {
-    background-color: $brand-color-1;
+    li {
+        padding: 10px 5px 10px 10px;
+    }
 
     @include breakpoint(map-get($breakpoints, sm)) {
         @include angle(before, false, 12deg);
         @include angle(after, true, 12deg);
 
-        margin-top: 20px;
+        margin-right: -15px;
+        min-height: 80px;
+        z-index: 2;
+    }
+}
+
+.nav__list--separator {
+    background-color: $brand-color-1;
+    border-right: 5px solid transparent;
+    list-style: none;
+    margin: 0;
+    padding: 25px 0;
+
+    li {
+        padding: 10px 5px 10px 10px;
     }
 
     .nav__list__link {
@@ -77,23 +84,9 @@ $navigation-breaker: #000 !default;
           color: darken($navigation-bg-color, 10%);
         }
     }
-
-    .nav.expanded & {
-        padding: 5px 0;
-
-        @include breakpoint(map-get($breakpoints, sm)) {
-            @include angle(before, false, 3deg);
-            @include angle(after, true, 3deg);
-
-            width: 140px;
-        }
-    }
 }
 
-.nav--left {
-    border-right: solid 1px $navigation-breaker;
-}
-
-.nav--right {
-    border-left: solid 1px $navigation-breaker;
+.nav__list__link {
+    @include display-flex();
+    @include align-items(center);
 }

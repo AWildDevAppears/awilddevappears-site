@@ -1,3 +1,10 @@
 .hidden {
     display: none;
 }
+
+
+.u-full-height {
+    @include breakpoint(map-get($breakpoints, sm)) {
+        height: 100vh;
+    }
+}
