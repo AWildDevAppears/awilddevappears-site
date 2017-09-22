@@ -1,25 +1,25 @@
-var exec       = require('child_process').exec;
+const exec       = require('child_process').exec;
 
-var gulp       = require('gulp');
+const gulp       = require('gulp');
 
-var sass       = require('gulp-ruby-sass');
-var minifyCss  = require('gulp-minify-css');
-var rename     = require('gulp-rename');
-var connect    = require('gulp-connect');
-var watch      = require('gulp-watch');
-var autoprefixer = require('gulp-autoprefixer');
+const sass       = require('gulp-sass');
+const minifyCss  = require('gulp-minify-css');
+const rename     = require('gulp-rename');
+const connect    = require('gulp-connect');
+const watch      = require('gulp-watch');
+const autoprefixer = require('gulp-autoprefixer');
 
-var paths = {
+const paths = {
   sass:       './_src/scss/**/*.scss',
   templates:  './_src/templates/**/*.pug'
 };
 
-gulp.task('watch', function () {
+gulp.task('watch', () => {
   gulp.watch(paths.sass, ['sass']);
   gulp.watch(paths.templates, ['depug']);
 });
 
-gulp.task('server', function() {
+gulp.task('server', () => {
   connect.server({
     livereload: true,
     port: 3000,
@@ -28,7 +28,7 @@ gulp.task('server', function() {
   });
 });
 
-gulp.task('depug', function (cb) {
+gulp.task('depug', (cb) => {
   exec('node _compile.js', function (err, stdout, stderr) {
     console.log(stdout);
     console.error(stderr);
@@ -36,14 +36,15 @@ gulp.task('depug', function (cb) {
   });
 });
 
-gulp.task('livereload', function() {
+gulp.task('livereload', () => {
   gulp.src(['css/*.css', 'js/**/*.js', '**/*.html'])
     .pipe(watch(['css/*.css', 'js/**/*.js', '**/*.html']))
     .pipe(connect.reload());
 });
 
-gulp.task('sass', function (done) {
-    sass('./_src/scss/main.scss')
+gulp.task('sass', (done) => {
+    gulp.src('./_src/scss/main.scss')
+    .pipe(sass())
     .pipe(gulp.dest('./css/'))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
