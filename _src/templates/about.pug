@@ -7,13 +7,16 @@ block title
 block body
   header.hero
     .container
-      h1.bitwise A Wild Dev Appears
-      h2 About me
+      .hero__body
+        h2 About
+      .hero__tagline
+        h1.bitwise A Wild Dev Appears
+
 
   .container
     h2  Hi, My name is Josh, I am a Front End developer cross Android/Hybrid app developer.
     p.
-      I build websites, native android apps and Hybrid apps.
+      I build websites, and Native and Hybrid apps.
       In my spare time I build indie games and apps for fun. I know a reasonable selection
       of languages, including but not limited to:
 
@@ -30,8 +33,14 @@ block body
           li CoffeeScript
       li Php
       li Python
-      li Android (Java)
-        li Kotlin
+      li Android
+        ul
+          li Java
+          li Kotlin
+      li iOS
+        ul
+          li Objective C
+          li Swift
       li Golang
       li C / C++
       li and a selection of other languages.
@@ -48,6 +57,7 @@ block body
       li Backbone
       li Ionic framework (1 and 2)
       li Phaser / PIXI
+      li CocoaPods
 
       h3 Testing frameworks
       li Jasmine
