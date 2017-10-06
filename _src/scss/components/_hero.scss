@@ -3,12 +3,21 @@ $hero-breaker-color: #ccc !default;
 
 .hero {
     background-color: $hero-background-color;
+    background-image: url('../img/bg.svg');
+    background-position-x: calc(100vw - 500px);
+    background-position-y: calc(80vh - 500px);
+    background-repeat: no-repeat;
+
     border-bottom: solid 1px $hero-breaker-color;
     color: set-dependent-color($hero-background-color);
     height: 80vh;
     padding: 100px 15px;
     position: relative;
     margin: 0;
+
+    @media(min-width: map-get($breakpoints, sm)) {
+        background-position-x: calc(100vw - 660px);
+    }
 }
 
 .hero__body,
@@ -18,7 +27,7 @@ $hero-breaker-color: #ccc !default;
 
 .hero__body {
     left: 0;
-    padding: 10px 20px;
+    padding: 10px 50px;
     top: 50%;
     transform: translateY(-50%);
     will-change: transform;
