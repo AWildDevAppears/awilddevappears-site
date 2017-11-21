@@ -12,18 +12,19 @@
   self.addEventListener('install', function(event) {
     event.waitUntil(
       caches.open(CACHE_NAME)
-      .then(function(cache) {
-        return cache.addAll(urlsToCache);
-      })
+        .then(function (cache) {
+          return cache.addAll(urlsToCache);
+        })
+        .catch(console.error)
     );
   });
 
   self.addEventListener('fetch', function(event) {
     event.respondWith(
       caches.match(event.request)
-      .then(function(response) {
-        return response || fetchAndCache(event.request);
-      })
+        .then(function(response) {
+          return response || fetchAndCache(event.request);
+        })
     );
   });
 
