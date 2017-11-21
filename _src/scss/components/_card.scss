@@ -6,12 +6,21 @@ $font-color: #000 !default;
     @include flex-direction(column);
 
     background-color: $card-background-color;
-    color: $font-color;
+    color: set-dependent-color($card-background-color);
     padding: 15px;
+
+    & + & {
+        margin-top: 2rem;
+    }
+
+    .col>& {
+        height: 100%;
+    }
 }
 
+
 .card--link {
-    color: $font-color;
+    color: set-dependent-color($card-background-color);
 }
 
 .card__heading {
