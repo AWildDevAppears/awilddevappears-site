@@ -22,7 +22,6 @@ $navigation-breaker: #000 !default;
         }
 
         .icon__shorttext {
-            animation: sidebar-text-animation .4s 1;
             display: inline-block;
             padding-left: 10px;
             vertical-align: center;
@@ -35,6 +34,10 @@ $navigation-breaker: #000 !default;
         position: relative;
         min-height: 100vh;
         overflow-x: hidden;
+
+        .icon__shorttext  {
+            display: none;
+        }
     }
 
 }
