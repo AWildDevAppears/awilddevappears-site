@@ -5,7 +5,7 @@
   var urlsToCache = [
     '.',
     'index.html',
-    'css/main.css',
+    'css/main.min.css',
     'js/main.js'
   ];
 
