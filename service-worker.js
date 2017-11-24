@@ -6,7 +6,9 @@
     '.',
     'index.html',
     'css/main.min.css',
-    'js/main.js'
+    'js/main.js',
+    'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
+    'https://fonts.googleapis.com/css?family=Libre+Franklin:300|VT323',
   ];
 
   self.addEventListener('install', function(event) {
