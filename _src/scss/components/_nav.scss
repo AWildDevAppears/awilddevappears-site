@@ -21,6 +21,16 @@ $navigation-breaker: #000 !default;
             }
         }
 
+        @include breakpoint(map-get($breakpoints, sm)) {
+            .icon__shorttext {
+                display: inline-block;
+                padding-left: 10px;
+                vertical-align: center;
+            }
+        }
+    }
+
+    @include breakpoint(max-width, map-get($breakpoints, sm)) {
         .icon__shorttext {
             display: inline-block;
             padding-left: 10px;
