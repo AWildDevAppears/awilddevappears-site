@@ -1,10 +1,11 @@
-$brand-color-1: #2d5889;
+$brand-color-1: #2D5889;
 $brand-color-2: #FF8F00;
-$brand-color-3: #d7263d;
-$brand-color-4: #72baa3;
+$brand-color-3: #D7263D;
+$brand-color-4: #72BAA3;
 
 $color-1: #414A4C;
-$color-2: #f5f5f5;
+$color-2: #F5F5F5;
+$color-3: #FFF;
 
 $background-color-1: $color-2;
 
@@ -21,7 +22,7 @@ $hero-background-color: lighten($color-1, 15%);
 $hero-breaker-color: $brand-color-1;
 
 $logo-background-color: $brand-color-2;
-$logo-font-color: #fff;
+$logo-font-color: $color-3;
 
 $primary-link-color: $brand-color-2;
 $primary-link-color-hover: darken($brand-color-2, 10%);
