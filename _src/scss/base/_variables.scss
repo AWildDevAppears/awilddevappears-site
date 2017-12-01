@@ -26,10 +26,3 @@ $button-type-map: (
         $brand-color-4, darken($brand-color-4, 10%),
     ),
 );
-
-$wrapper-color-map: (
-    primary: darken($brand-color-2, 10%),
-    secondary: darken($brand-color-1, 10%),
-    negative: $brand-color-3,
-    positive: $brand-color-4,
-);

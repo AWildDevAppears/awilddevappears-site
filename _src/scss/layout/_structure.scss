@@ -21,6 +21,11 @@ section {
     background-color: $content-background;
     margin-left: -20px;
     padding-left: 20px;
+
+    .card,
+    .btn {
+        box-shadow: 5px 5px 5px darken($color-3, 15%);
+    }
 }
 
 .container {

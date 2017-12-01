@@ -20,6 +20,10 @@ $navigation-breaker-text: #fff !default;
             }
         }
 
+        .nav__list {
+            margin-right: -25px;
+        }
+
         .icon__shorttext {
             display: inline-block;
             padding-left: 10px;
