@@ -39,7 +39,7 @@
         }
 
         return caches.open(CACHE_NAME)
-        .then(function(cache) {
+        .then(function (cache) {
           cache.put(url, response.clone());
           return response;
         });

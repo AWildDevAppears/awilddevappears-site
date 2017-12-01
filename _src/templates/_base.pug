@@ -1,23 +1,28 @@
 doctype html
-head
-  meta(charset="UTF-8")
-  meta(name="viewport" content="width=device-width, initial-scale=1")
-  include includes/meta.pug
-  block title
+html(lang="en-GB" dir="ltr")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    include includes/meta.pug
 
-  link(rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
-  link(href="https://fonts.googleapis.com/css?family=Libre+Franklin:300|VT323" rel="stylesheet")
+    block title
 
-  if selectedPage != 'project' && selectedPage != 'blog-post'
-    link(rel="stylesheet" type="text/css" href="css/main.min.css")
-  else
-    link(rel="stylesheet" type="text/css" href="../css/main.min.css")
+    link(rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+    link(href="https://fonts.googleapis.com/css?family=Libre+Franklin:300|VT323" rel="stylesheet")
 
-body
-  .wrapper--flex
-    include includes/nav.pug
-    .content
-      block body
-  include includes/scripts.pug
+    if selectedPage != 'project' && selectedPage != 'blog-post'
+      link(rel="stylesheet" type="text/css" href="css/main.min.css")
+    else
+      link(rel="stylesheet" type="text/css" href="../css/main.min.css")
 
-  block scripts
+  body
+    .wrapper--flex
+      include includes/nav.pug
+      .content
+        include includes/hero.pug
+
+        block body
+
+    include includes/scripts.pug
+    block scripts

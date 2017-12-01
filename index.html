@@ -1,105 +1,109 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta description="A wild dev appears - Portfolio site">
-  <title>AWildDevAppears</title>
-  <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300|VT323" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/main.min.css">
-</head>
-<body>
-  <div class="wrapper--flex">
-    <button class="btn btn--toggle" data-toggle="side-nav"><span class="btn--toggle__bar"></span><span class="btn--toggle__bar"></span><span class="btn--toggle__bar"></span></button>
-    <nav class="nav nav--left expanded" id="side-nav">
-      <div class="nav__content--sticky">
-        <ul class="nav__list">
-          <li><a class="nav__list__link" href="#"><i class="ion ico--md ion-android-home"></i><span class="icon__shorttext">Home</span></a>
-          </li>
-          <li><a class="nav__list__link" href="about.html"><i class="ion ico--md ion-person"></i><span class="icon__shorttext">About</span></a>
-          </li>
-          <li><a class="nav__list__link" href="projects.html"><i class="ion ico--md ion-code"></i><span class="icon__shorttext">Projects</span></a>
-          </li>
-          <li class="hidden"><a class="nav__list__link" href="blog.html"><i class="ion ico--md ion-social-rss"></i><span class="icon__shorttext">Blog</span></a>
-          </li>
-          <li><a class="nav__list__link" href="styleguide.html"><i class="ion ico--md ion-paintbucket"></i><span class="icon__shorttext">Styleguide</span></a>
-          </li>
-        </ul>
-        <ul class="nav__list--separator">
-          <li><a class="nav__list__link" href="https://github.com/WoJBurgess"><i class="ion ico--md ion-social-github"></i><span class="icon__shorttext">Github</span></a></li>
-          <li><a class="nav__list__link" href="https://www.linkedin.com/in/josh-burgess-1826b883/"><i class="ion ico--md ion-social-linkedin"></i><span class="icon__shorttext">LinkedIn</span></a></li>
-          <li class="hidden"><a class="nav__list__link" href="https://twitter.com/"><i class="ion ico--md ion-social-twitter"></i><span class="icon__shorttext">Twitter</span></a></li>
-        </ul>
-        <ul class="nav__list u-full-height">
-          <li>
-            <button class="btn btn--icon hidden" data-role="settings-menu"><i class="ion ico--md ion-gear-b"></i><span class="icon__shorttext">Settings</span></button>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="content">
-      <header class="hero">
-        <div class="container">
-          <div class="hero__body">
-            <h2>Josh Burgess</h2>
-          </div>
-          <div class="hero__tagline">
-            <h1 class="bitwise">A Wild Dev Appears</h1>
-          </div>
-        </div>
-      </header>
-      <div class="container block block--headed">
-        <div class="card">
-          <h2>Note</h2>
-          <p>
-            This site mostly exists simply as a basis for me to work on, I plan to upgrade this site as I go, adding new functionality
-            and features. None of what you see here is final. It may not always look the way it does, it may not stay on Github.io's servers,
-            it may not even stay written in the languages it is, it all depends on how I decide to move forward with this.
-          </p>
-        </div>
-        <div class="card">
-          <h2> Site Meta</h2>
-          <p>
-            This site has been built using SCSS as a CSS preprocessor, using my own selection of tools (some of which I have built)
-            to aid me in styling up this site, for the pages, I have used Pug, formally Jade, as a transpiler, my reasoning behind this
-            is so that I can make it a lot easier to edit and manipulate shared areas of the page, without touching every page file.
-            The idea behind this site build is to allow it to me as easy as possible for me to maintain and completely alter as I see fit.
-          </p>
-        </div>
-        <div class="card">
-          <h3>What are the tools behind this site?</h3>
-          <ul>
-            <li><a href="https://nodejs.org/">Node</a>
-              <p>Node is used for compiling the PUG files and running Gulp etc.</p>
+<html lang="en-GB" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta description="A wild dev appears - Portfolio site">
+    <title>AWildDevAppears</title>
+    <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300|VT323" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper--flex">
+      <button class="btn btn--toggle" data-toggle="side-nav"><span class="btn--toggle__bar"></span><span class="btn--toggle__bar"></span><span class="btn--toggle__bar"></span></button>
+      <nav class="nav nav--left expanded" id="side-nav">
+        <div class="nav__content--sticky">
+          <ul class="nav__list">
+            <li><a class="nav__list__link" href="#"><i class="ion ico--md ion-android-home"></i><span class="icon__shorttext">Home</span></a>
             </li>
-            <li><a href="https://pugjs.org/">Pug</a>
-              <p>Pug is used for this sites html pages, it is used to make the site easier to modify</p>
+            <li><a class="nav__list__link" href="about.html"><i class="ion ico--md ion-person"></i><span class="icon__shorttext">About</span></a>
             </li>
-            <li><a href="http://sass-lang.com/">SCSS</a>
-              <p>SCSS is used as the precompiler for all of my CSS files</p>
+            <li><a class="nav__list__link" href="projects.html"><i class="ion ico--md ion-code"></i><span class="icon__shorttext">Projects</span></a>
             </li>
-            <li><a href="">Tequila</a>
-              <p>Tequila is my own Sass based tool that adds in a few mixins so that I don't have to reinvent the wheel every time</p>
+            <li class="hidden"><a class="nav__list__link" href="blog.html"><i class="ion ico--md ion-social-rss"></i><span class="icon__shorttext">Blog</span></a>
             </li>
-            <li><a href="http://breakpoint-sass.com/">Breakpoint</a>
-              <p>Breakpoint is used to make breakpoint media queries feel a lot cleaner and easier to read.</p>
+            <li><a class="nav__list__link" href="styleguide.html"><i class="ion ico--md ion-paintbucket"></i><span class="icon__shorttext">Styleguide</span></a>
             </li>
-            <li><a href="http://gridsingularity.com/">Singularity</a>
-              <p>
-                Singularity is my grid system of choice, it is used for all of the grid sections that I feel would be easier to acheive
-                without flexbox.
-              </p>
-            </li>
-            <li><a href="https://bower.io/">Bower</a>
-              <p>Bower is the tool I am using to include my Sass mixins and tools.</p>
-            </li>
-            <li><a href="https://gulpjs.com/">Gulp</a>
-              <p>Gulp is used to tie all of the tools I am using together</p>
+          </ul>
+          <ul class="nav__list--separator">
+            <li><a class="nav__list__link" href="https://github.com/WoJBurgess" rel="noopener noreferrer"><i class="ion ico--md ion-social-github"></i><span class="icon__shorttext">Github</span></a></li>
+            <li><a class="nav__list__link" href="https://www.linkedin.com/in/josh-burgess-1826b883/" rel="noopener noreferrer"><i class="ion ico--md ion-social-linkedin"></i><span class="icon__shorttext">LinkedIn</span></a></li>
+            <li class="hidden"><a class="nav__list__link" href="https://twitter.com/" rel="noopener noreferrer"><i class="ion ico--md ion-social-twitter"></i><span class="icon__shorttext">Twitter</span></a></li>
+          </ul>
+          <ul class="nav__list u-full-height">
+            <li>
+              <button class="btn btn--icon hidden" data-role="settings-menu"><i class="ion ico--md ion-gear-b"></i><span class="icon__shorttext">Settings</span></button>
             </li>
           </ul>
         </div>
+      </nav>
+      <div class="content">
+        <header class="hero">
+          <div class="container">
+            <div class="hero__body">
+              <h2>Josh Burgess</h2>
+            </div>
+            <div class="hero__tagline">
+              <h1 class="bitwise">A Wild Dev Appears</h1>
+            </div>
+          </div>
+        </header>
+        <div class="container block block--headed">
+          <div class="card">
+            <h2>Note</h2>
+            <p>
+              This site mostly exists simply as a basis for me to work on, I plan to upgrade this site as I go, adding new functionality
+              and features. None of what you see here is final. It may not always look the way it does, it may not stay on Github.io's servers,
+              it may not even stay written in the languages it is, it all depends on how I decide to move forward with this.
+            </p>
+          </div>
+          <div class="card">
+            <h2> Site Meta</h2>
+            <p>
+              This site has been built using SCSS as a CSS preprocessor, using my own selection of tools (some of which I have built)
+              to aid me in styling up this site, for the pages, I have used Pug, formally Jade, as a transpiler, my reasoning behind this
+              is so that I can make it a lot easier to edit and manipulate shared areas of the page, without touching every page file.
+              The idea behind this site build is to allow it to me as easy as possible for me to maintain and completely alter as I see fit.
+            </p>
+          </div>
+          <div class="card">
+            <h3>What are the tools behind this site?</h3>
+            <ul>
+              <li><a href="https://nodejs.org/">Node</a>
+                <p>Node is used for compiling the PUG files and running Gulp etc.</p>
+              </li>
+              <li><a href="https://pugjs.org/">Pug</a>
+                <p>Pug is used for this sites html pages, it is used to make the site easier to modify</p>
+              </li>
+              <li><a href="http://sass-lang.com/">SCSS</a>
+                <p>SCSS is used as the precompiler for all of my CSS files</p>
+              </li>
+              <li><a href="">Tequila</a>
+                <p>Tequila is my own Sass based tool that adds in a few mixins so that I don't have to reinvent the wheel every time</p>
+              </li>
+              <li><a href="http://breakpoint-sass.com/">Breakpoint</a>
+                <p>Breakpoint is used to make breakpoint media queries feel a lot cleaner and easier to read.</p>
+              </li>
+              <li><a href="http://gridsingularity.com/">Singularity</a>
+                <p>
+                  Singularity is my grid system of choice, it is used for all of the grid sections that I feel would be easier to acheive
+                  without flexbox.
+                </p>
+              </li>
+              <li><a href="https://bower.io/">Bower</a>
+                <p>Bower is the tool I am using to include my Sass mixins and tools.</p>
+              </li>
+              <li><a href="https://gulpjs.com/">Gulp</a>
+                <p>Gulp is used to tie all of the tools I am using together</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <script type="text/javascript" src="js/main.js"></script>
-</body>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

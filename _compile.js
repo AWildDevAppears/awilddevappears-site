@@ -7,13 +7,11 @@ const PAGES = [
   'projects',
   'blog',
   'styleguide'
-]
-
+];
 const PROJECTS = [];
-
 const POSTS = [
   'post-one'
-]
+];
 
 console.log('-- Building site --\n-- Transpiling pug files --\n');
 
@@ -27,7 +25,6 @@ PAGES.forEach((page) => {
       console.log(`- Page "${page}" created`);
   });
 });
-
 
 PROJECTS.forEach((project) => {
   fs.writeFile(`./projects/${project}.html`, pug.compileFile(`_src/templates/projects/${project}.pug`, {
