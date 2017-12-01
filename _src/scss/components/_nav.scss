@@ -1,5 +1,6 @@
 $navigation-bg-color: #fff !default;
 $navigation-breaker: #000 !default;
+$navigation-breaker-text: #fff !default;
 
 .nav {
     z-index: 1;
@@ -92,10 +93,10 @@ $navigation-breaker: #000 !default;
     }
 
     .nav__list__link {
-        color: $navigation-bg-color;
+        color: $navigation-breaker-text;
 
         @include pseudos() {
-          color: darken($navigation-bg-color, 10%);
+          color: darken($navigation-breaker-text, 10%);
         }
     }
 }
