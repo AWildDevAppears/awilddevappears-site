@@ -3,6 +3,7 @@ $navigation-breaker: #000 !default;
 $navigation-breaker-text: #fff !default;
 
 .nav {
+    filter: drop-shadow(2px 2px 0 $color-2);
     z-index: 1;
 
     &.animated {
