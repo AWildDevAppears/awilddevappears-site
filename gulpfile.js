@@ -9,14 +9,18 @@ const connect    = require('gulp-connect');
 const watch      = require('gulp-watch');
 const autoprefixer = require('gulp-autoprefixer');
 
+const workbox = require('workbox-build');
+
 const paths = {
   sass:       './_src/scss/**/*.scss',
-  templates:  './_src/templates/**/*.pug'
+  templates:  './_src/templates/**/*.pug',
+  outputs: ['**/*.html', './js/**/*.js', './css/**/*.css'],
 };
 
 gulp.task('watch', () => {
   gulp.watch(paths.sass, ['sass']);
   gulp.watch(paths.templates, ['depug']);
+  gulp.watch(paths.outputs, ['generate-service-worker']);
 });
 
 gulp.task('server', () => {
@@ -58,5 +62,17 @@ gulp.task('sass', (done) => {
     .on('end', done);
 });
 
-gulp.task('default', ['sass', 'depug']);
+gulp.task('generate-service-worker', () => {
+  return workbox.generateSW(
+    require('./workbox-cli-config')
+  ).then(() => {
+    console.info('Service worker generation completed.');
+  }).catch((error) => {
+    console.warn('Service worker generation failed: ' + error);
+  });
+});
+
+
+
+gulp.task('default', ['sass', 'depug', 'generate-service-worker']);
 gulp.task('serve', ['sass', 'server', 'livereload', 'watch']);
