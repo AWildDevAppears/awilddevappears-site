@@ -4,7 +4,7 @@ module.exports = {
     '**/*.html',
     'js/**/*.js',
     'css/**/*.min.css',
-    'img/**/*.{svg,png}'
+    'img/**/*.{svg,png}',
 
   ],
   swDest: './service-worker.js',
@@ -20,6 +20,10 @@ module.exports = {
     {
       urlPattern: new RegExp('https://fonts.googleapis.com/css?family=Libre+Franklin:300|VT323'),
       handler: 'staleWhileRevalidate',
-    }
+    },
+    {
+      urlPattern: new RegExp('https://cdn.polyfill.io/v2/polyfill.min.js'),
+      handler: 'staleWhileRevalidate',
+    },
   ]
 };

@@ -68,3 +68,4 @@ const workboxSW = new self.WorkboxSW();
 workboxSW.precache(fileManifest);
 workboxSW.router.registerRoute(/https:\/\/use.fontawesome.com\/c3a9dd4412.js/, workboxSW.strategies.staleWhileRevalidate({}), 'GET');
 workboxSW.router.registerRoute(/https:\/\/fonts.googleapis.com\/css?family=Libre+Franklin:300|VT323/, workboxSW.strategies.staleWhileRevalidate({}), 'GET');
+workboxSW.router.registerRoute(/https:\/\/cdn.polyfill.io\/v2\/polyfill.min.js/, workboxSW.strategies.staleWhileRevalidate({}), 'GET');
