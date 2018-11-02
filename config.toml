@@ -9,5 +9,13 @@ theme = "wilddev"
     url = "/"
 
   [[menu.main]]
-    name = "Hello"
-    url = "/"
+    name = "About"
+    url = "/about"
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects"
+
+  [[menu.main]]
+    name = "Styleguide"
+    url = "/styleguide"
