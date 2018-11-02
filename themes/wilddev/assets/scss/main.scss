@@ -1,4 +1,8 @@
+@import './base/palette';
+
+@import './components/navigation';
+
 body {
-    background-color: red;
+    background-color: $color-2;
     margin: 0;
 }
