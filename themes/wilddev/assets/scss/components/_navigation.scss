@@ -1,16 +1,27 @@
 .navigation {
+    bottom: 0;
     background-color: $color-1;
     color: $color-3;
+    position: fixed;
+    width: 100%;
 
     a {
         color: $color-3;
         text-decoration: none;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $brand-color-2;
+        }
     }
 }
 
 .navigation__inner {
+    align-items: center;
     display: flex;
-    margin:0 auto;
+    justify-content: space-between;
+    min-height: 75px;
 }
 
 .navigation__items {
@@ -21,10 +32,17 @@
 
 .navigation__item {
     display: inline-block;
+    padding: 15px 0;
+
+    &:not(:last-of-type)::after {
+        display: inline-block;
+        content: '|';
+        padding: 0 15px;
+    }
 }
 
 .navigation__logo {
     display: inline-block;
-    flex: 1;
-    padding: 15px;
+    flex: 200px 0 0;
+    padding: 15px 0;
 }
