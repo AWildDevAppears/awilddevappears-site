@@ -1,13 +1,15 @@
 <nav role="navigation" class="navigation">
-    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <div class="container navigation__inner">
+        <a href="{{ .Site.BaseURL }}" class="navigation__logo">{{ .Site.Title }}</a>
 
-    {{ if .Site.Menus.main }}
-        <ul>
-        {{ range .Site.Menus.main }}
-            <li>
-                <a href="{{ .URL }}" title="{{ .Name }} page">{{ .Name }}</a>
-            </li>
+        {{ if .Site.Menus.main }}
+            <ul class="navigation__items">
+            {{ range .Site.Menus.main }}
+                <li class="navigation__item">
+                    <a href="{{ .URL }}" title="{{ .Name }} page">{{ .Name }}</a>
+                </li>
+            {{ end }}
+            </ul>
         {{ end }}
-        </ul>
-    {{ end }}
+    </div>
 </nav>

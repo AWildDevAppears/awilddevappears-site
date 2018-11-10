@@ -1,3 +1,30 @@
 .navigation {
     background-color: $color-1;
+    color: $color-3;
+
+    a {
+        color: $color-3;
+        text-decoration: none;
+    }
+}
+
+.navigation__inner {
+    display: flex;
+    margin:0 auto;
+}
+
+.navigation__items {
+    list-style: none;
+    align-self: flex-end;
+    padding: 0 15px;
+}
+
+.navigation__item {
+    display: inline-block;
+}
+
+.navigation__logo {
+    display: inline-block;
+    flex: 1;
+    padding: 15px;
 }
