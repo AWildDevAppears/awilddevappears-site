@@ -1,0 +1,19 @@
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    color: $font-color;
+}
+
+.bitwise {
+    font-family: 'VT323', monospace;
+}
+
+a {
+    color: $primary-link-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $primary-link-color-hover;
+    }
+}

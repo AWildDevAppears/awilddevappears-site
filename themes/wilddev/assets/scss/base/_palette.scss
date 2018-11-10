@@ -6,3 +6,9 @@ $brand-color-4: #72baa3;
 $color-1: #414A4C;
 $color-2: #F5F5F5;
 $color-3: #FFF;
+
+// Bindings
+$font-color: $color-1;
+
+$primary-link-color: $brand-color-2;
+$primary-link-color-hover: darken($brand-color-2, 10%);
