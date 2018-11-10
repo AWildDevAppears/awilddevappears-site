@@ -1,7 +1,9 @@
 @import './base/palette';
+@import './base/variables';
 @import './base/typography';
 
 @import './components/container';
+@import './components/header';
 @import './components/navigation';
 
 body {
