@@ -7,10 +7,17 @@
     </div>
 
 
-    {{ range .Pages }}
-        <article class="container">
-            <h2>{{ .Title }}</h2>
-            {{ .Content }}
-        </article>
-    {{ end }}
+    <div class="container">
+        <div class="grid grid--three">
+            {{ range .Pages }}
+                <article class="card">
+                    <h2>{{ .Title }}</h2>
+        
+                    <p>{{ .Summary }}</p>
+        
+                    <a href="{{ .Permalink }}" class="btn btn--primary">Read more</a>
+                </article>
+            {{ end }}
+        </div>
+    </div>
 {{ end }}

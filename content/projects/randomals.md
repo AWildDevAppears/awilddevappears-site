@@ -2,9 +2,9 @@
 title: "Randomals"
 date: 2018-12-30T13:13:49Z
 draft: true
----
 
-# Randomals
+source: "https://github.com/AWildDevAppears/Randomals-react-test"
+---
 
 Randomals was an app that I built during the time when i was initially learning React, it is a very simplistic app with no back-end whatsoever.
 The reason I decided not to use a back-end was that I wanted to focus on React alone, and not have anything else that might distract me from my main goal,
