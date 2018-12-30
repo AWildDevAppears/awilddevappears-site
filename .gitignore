@@ -1,2 +1,3 @@
 node_modules/ # ignore node_modules, that are not needed to display the site
 _gen/
+public/
