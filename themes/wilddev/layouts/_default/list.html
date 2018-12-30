@@ -2,10 +2,13 @@
 
 {{ define "main" }}
 
-    {{ .Content }}
+    <div class="container">
+        {{ .Content }}
+    </div>
+
 
     {{ range .Pages }}
-        <article>
+        <article class="container">
             <h2>{{ .Title }}</h2>
             {{ .Content }}
         </article>
