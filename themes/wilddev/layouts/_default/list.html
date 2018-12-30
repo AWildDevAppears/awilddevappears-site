@@ -8,16 +8,19 @@
 
 
     <div class="container">
-        <div class="grid grid--three">
-            {{ range .Pages }}
-                <article class="card">
-                    <h2>{{ .Title }}</h2>
-        
-                    <p>{{ .Summary }}</p>
-        
-                    <a href="{{ .Permalink }}" class="btn btn--primary">Read more</a>
-                </article>
-            {{ end }}
-        </div>
+        {{ range .Pages.GroupByParam "type"  }}
+            <h2>{{ .Key }}</h2>
+            <div class="grid grid--three">
+                {{ range .Pages }}
+                    <article class="card">
+                        <h2>{{ .Title }}</h2>
+            
+                        <p>{{ .Summary }}</p>
+            
+                        <a href="{{ .Permalink }}" class="btn btn--primary">Read more</a>
+                    </article>
+                {{ end }}
+            </div>
+        {{ end }}
     </div>
 {{ end }}

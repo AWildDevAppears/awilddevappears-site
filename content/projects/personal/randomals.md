@@ -4,6 +4,7 @@ date: 2018-12-30T13:13:49Z
 draft: true
 
 source: "https://github.com/AWildDevAppears/Randomals-react-test"
+type: "Personal projects"
 ---
 
 Randomals was an app that I built during the time when i was initially learning React, it is a very simplistic app with no back-end whatsoever.
