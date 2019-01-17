@@ -12,4 +12,4 @@ I inititially built this site using Pug as I wanted to have a templating framewo
 
 Pug did initially speed up the build process, it meant I could start componentising my site, have my header and footer in one place everything was great, except for the scripts that a rolled for building the site. They were clunky to say the least, and to say the worst they were incomprehensible to anyone outside of the project, they were magical, only I knew what I'd have to do to add a new page, and if I ever forgot...
 
-I hooked these scripts directly into gulp, which didn't really help. Gulp was poular when I built this site but it was also severely overkill for what I wanted to acheive. With the rise of webpack looming it was in need of a refresh.
+I hooked these scripts directly into gulp, which didn't really help. Gulp was popular when I built this site but it was also severely overkill for what I wanted to acheive. With the rise of webpack looming it was in need of a refresh.
