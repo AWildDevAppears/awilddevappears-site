@@ -32,4 +32,3 @@ This particular paragraph has things like **bold text** and *italic text*, it's 
 ## Buttons
 
 {{< cta type="primary" href="#buttons" text="Primary CTA" >}}
-

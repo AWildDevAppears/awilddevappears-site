@@ -12,4 +12,5 @@
 body {
     background-color: $color-2;
     margin: 0;
+    margin-bottom: 120px; // TODO: Use grid or flexbox to get rid of this
 }
