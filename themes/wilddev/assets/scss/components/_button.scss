@@ -9,7 +9,7 @@
     color: $color-3;
 
     &:hover,
-    &:active, 
+    &:active,
     &:focus {
         background-color: darken($brand-color-1, 15%);
         color: $color-3;

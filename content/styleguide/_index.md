@@ -29,3 +29,7 @@ This particular paragraph has things like **bold text** and *italic text*, it's 
     }
 {{< / highlight >}}
 
+## Buttons
+
+{{< cta type="primary" href="#buttons" text="Primary CTA" >}}
+
