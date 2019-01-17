@@ -2,6 +2,13 @@
 
 {{ define "main" }}
 
+    <header class="header header--{{ .Title }}">
+        <div class="container">
+            <h1 class="bitwise">{{ .Site.Title }}</h1>
+            <h2>{{ .Title }}</h2>
+        </div>
+    </header>
+
     <div class="container">
         {{ .Content }}
     </div>
@@ -14,9 +21,9 @@
                 {{ range .Pages }}
                     <article class="card">
                         <h3>{{ .Title }}</h3>
-            
+
                         <p>{{ .Summary }}</p>
-            
+
                         <a href="{{ .Permalink }}" class="btn btn--primary">Read more</a>
                     </article>
                 {{ end }}
