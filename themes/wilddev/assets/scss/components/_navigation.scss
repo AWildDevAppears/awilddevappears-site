@@ -1,13 +1,13 @@
 .navigation {
     bottom: 0;
-    background-color: $color-1;
-    color: $color-3;
+    background-color: $color-3;
+    color: $color-1;
     position: fixed;
     width: 100%;
-    border-top: 2px solid $color-3;
+    border-top: 2px solid $brand-color-2;
 
     a {
-        color: $color-3;
+        color: $color-1;
         text-decoration: none;
 
         &:hover,
