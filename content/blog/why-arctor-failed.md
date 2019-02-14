@@ -1,7 +1,7 @@
 ---
 title: "Why Arctor failed"
 date: 2019-01-02T11:18:20Z
-draft: true
+draft: false
 
 type: "Personal projects"
 ---

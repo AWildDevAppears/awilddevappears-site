@@ -1,7 +1,7 @@
 ---
 title: "Render 2018"
 date: 2018-12-30T18:21:22Z
-draft: true
+draft: false
 
 live: "https://2018.render-conf.com/"
 

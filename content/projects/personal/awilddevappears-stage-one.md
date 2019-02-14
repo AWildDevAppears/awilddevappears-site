@@ -1,7 +1,7 @@
 ---
 title: "AWildDevAppears Stage One"
 date: 2017-12-30T17:23:10Z
-draft: true
+draft: false
 
 type: "Personal projects"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "My Experience With Hugo"
 date: 2019-01-17T17:07:35Z
-draft: true
+draft: false
 ---
 
 In late 2018, I decided to rebuild my site. It was never really finished in the first place and it was written in old or obscure technologies, I didn't like it. Pug was great, but I've always been a fan of being able to just write HTML and my build tooling was clunky to say the least.
