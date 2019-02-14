@@ -1,0 +1,16 @@
+{{ define "title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+
+        {{ if (isset .Params "source") }}
+            <a href="{{ .Params.source }}" class="btn btn--primary">View source</a>
+        {{ end }}
+
+        {{ if (isset .Params "live") }}
+        <a href="{{ .Params.live }}" class="btn btn--primary">View live site</a>
+    {{ end }}
+    </div>
+{{ end }}

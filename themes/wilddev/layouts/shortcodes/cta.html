@@ -1,0 +1,6 @@
+<a
+    class="btn btn--{{ .Get "type" }}{{ with .Get "size" }} btn--{{.}}{{ end }}"
+    href="{{ .Get "href" }}"
+>
+    {{ .Get "text" }}
+</a>

@@ -1,0 +1,16 @@
+@import './base/palette';
+@import './base/variables';
+@import './base/typography';
+@import './base/grid';
+
+@import './components/button';
+@import './components/card';
+@import './components/container';
+@import './components/header';
+@import './components/navigation';
+
+body {
+    background-color: $color-2;
+    margin: 0;
+    margin-bottom: 120px; // TODO: Use grid or flexbox to get rid of this
+}

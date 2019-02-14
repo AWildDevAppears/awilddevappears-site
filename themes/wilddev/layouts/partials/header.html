@@ -1,0 +1,15 @@
+<nav role="navigation" class="navigation">
+    <div class="container navigation__inner">
+        <a href="{{ .Site.BaseURL }}" class="navigation__logo">{{ .Site.Title }}</a>
+
+        {{ if .Site.Menus.main }}
+            <ul class="navigation__items">
+            {{ range .Site.Menus.main }}
+                <li class="navigation__item">
+                    <a href="{{ .URL }}" title="{{ .Name }} page">{{ .Name }}</a>
+                </li>
+            {{ end }}
+            </ul>
+        {{ end }}
+    </div>
+</nav>

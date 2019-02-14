@@ -1,0 +1,17 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "AWildDevAppears"
+theme = "wilddev"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects"
+
+  [[menu.main]]
+    name = "Styleguide"
+    url = "/styleguide"

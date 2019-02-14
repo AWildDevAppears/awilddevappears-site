@@ -1,0 +1,12 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+
+{{ define "main" }}
+    <header class="header header--main">
+        <div class="container">
+            <h1 class="bitwise">{{ .Site.Data.global.title }}</h1>
+            <h2>{{ .Site.Data.global.subtitle  }}</h2>
+        </div>
+    </header>
+
+    <div class="container">{{.Content}}</div>
+{{ end }}
